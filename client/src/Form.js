@@ -27,7 +27,6 @@ class Form extends Component {
 
     axios.post('api/submit', {username, birthdate, email}
     ).then(function (response) {
-      console.log("res:"+response.data);
     }).catch(function (response) {
       console.log("err"+response);
     });
